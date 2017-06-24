@@ -7,19 +7,41 @@
 //
 
 import UIKit
+import Contacts
+import AddressBook
 
 class ViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var nameFull: UILabel!
+    @IBOutlet weak var email: UILabel!
+    @IBOutlet weak var phoneNo: UILabel!
+    @IBOutlet weak var address: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
     }
-
-
+    
+    @IBAction func getContact(_ sender: AnyObject) {
+        
+        let profile = DeviceProfile()
+        profile.initialization()
+        
+        
+        nameFull.text = profile.getName()
+        email.text = profile.getEmail()
+        phoneNo.text = profile.getPhoneNumber()
+        address.text = profile.getAddress()
+        
+        
+        
+    }
+    
 }
 

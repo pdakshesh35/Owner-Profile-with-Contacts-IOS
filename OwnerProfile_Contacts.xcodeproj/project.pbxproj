@@ -14,6 +14,9 @@
 		882A96F11EFECBB900333EF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882A96EF1EFECBB900333EF5 /* LaunchScreen.storyboard */; };
 		882A96FC1EFECBB900333EF5 /* OwnerProfile_ContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A96FB1EFECBB900333EF5 /* OwnerProfile_ContactsTests.swift */; };
 		882A97071EFECBB900333EF5 /* OwnerProfile_ContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A97061EFECBB900333EF5 /* OwnerProfile_ContactsUITests.swift */; };
+		882A97171EFEE3E500333EF5 /* DeviceProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A97161EFEE3E500333EF5 /* DeviceProfile.swift */; };
+		882A971A1EFEE44B00333EF5 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882A97191EFEE44B00333EF5 /* Contacts.framework */; };
+		882A971C1EFEE47600333EF5 /* StringHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882A971B1EFEE47600333EF5 /* StringHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		882A97021EFECBB900333EF5 /* OwnerProfile_ContactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OwnerProfile_ContactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		882A97061EFECBB900333EF5 /* OwnerProfile_ContactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerProfile_ContactsUITests.swift; sourceTree = "<group>"; };
 		882A97081EFECBB900333EF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		882A97161EFEE3E500333EF5 /* DeviceProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceProfile.swift; sourceTree = "<group>"; };
+		882A97191EFEE44B00333EF5 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		882A971B1EFEE47600333EF5 /* StringHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882A971A1EFEE44B00333EF5 /* Contacts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +88,7 @@
 				882A96FA1EFECBB900333EF5 /* OwnerProfile_ContactsTests */,
 				882A97051EFECBB900333EF5 /* OwnerProfile_ContactsUITests */,
 				882A96E41EFECBB900333EF5 /* Products */,
+				882A97181EFEE44A00333EF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +111,8 @@
 				882A96ED1EFECBB900333EF5 /* Assets.xcassets */,
 				882A96EF1EFECBB900333EF5 /* LaunchScreen.storyboard */,
 				882A96F21EFECBB900333EF5 /* Info.plist */,
+				882A97161EFEE3E500333EF5 /* DeviceProfile.swift */,
+				882A971B1EFEE47600333EF5 /* StringHelpers.swift */,
 			);
 			path = OwnerProfile_Contacts;
 			sourceTree = "<group>";
@@ -123,6 +133,14 @@
 				882A97081EFECBB900333EF5 /* Info.plist */,
 			);
 			path = OwnerProfile_ContactsUITests;
+			sourceTree = "<group>";
+		};
+		882A97181EFEE44A00333EF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				882A97191EFEE44B00333EF5 /* Contacts.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +211,7 @@
 				TargetAttributes = {
 					882A96E21EFECBB900333EF5 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = AXT8UHAXWZ;
 						ProvisioningStyle = Automatic;
 					};
 					882A96F61EFECBB900333EF5 = {
@@ -259,6 +278,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882A971C1EFEE47600333EF5 /* StringHelpers.swift in Sources */,
+				882A97171EFEE3E500333EF5 /* DeviceProfile.swift in Sources */,
 				882A96E91EFECBB900333EF5 /* ViewController.swift in Sources */,
 				882A96E71EFECBB900333EF5 /* AppDelegate.swift in Sources */,
 			);
@@ -414,6 +435,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AXT8UHAXWZ;
 				INFOPLIST_FILE = OwnerProfile_Contacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hdentities.OwnerProfile-Contacts";
@@ -426,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AXT8UHAXWZ;
 				INFOPLIST_FILE = OwnerProfile_Contacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hdentities.OwnerProfile-Contacts";
